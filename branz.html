@@ -1,0 +1,43 @@
+<!-- Mary Ciolina Branzuela BSIT-4R3 -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>HTML Calculator</title>	
+</head>
+<body>
+
+<h1>HTML Calculator</h1>
+
+<form name="calcu" class="calculator">
+<input type="textfield" name="answer" placeholder="0" readonly="readonly">
+<br>
+<!-- displaying numbers -->
+<input type="button" value="CE" onclick="document.calcu.answer.value=''">
+<input type="button" value="&#8592;" onclick="document.calcu.answer.value=document.calcu.answer.value.substring(0,document.calcu.answer.value.length -1)">
+<input type="button" value="&radic;" onclick="document.calcu.answer.value=Math.sqrt(document.calcu.answer.value)">
+<input type="button" value="+" onclick="document.calcu.answer.value+='+'">
+<br>
+<input type="button" value="7" onclick="document.calcu.answer.value+='7'">
+<input type="button" value="8" onclick="document.calcu.answer.value+='8'">
+<input type="button" value="9" onclick="document.calcu.answer.value+='9'">
+<input type="button" value="-" onclick="document.calcu.answer.value+='-'">
+<br>
+<input type="button" value="4" onclick="document.calcu.answer.value+='4'">
+<input type="button" value="5" onclick="document.calcu.answer.value+='5'">
+<input type="button" value="6" onclick="document.calcu.answer.value+='6'">
+<input type="button" value="*" onclick="document.calcu.answer.value+='*'">
+<br>
+<input type="button" value="1" onclick="document.calcu.answer.value+='1'">
+<input type="button" value="2" onclick="document.calcu.answer.value+='2'">
+<input type="button" value="3" onclick="document.calcu.answer.value+='3'">
+<input type="button" value="/" onclick="document.calcu.answer.value+='/'">
+<br>
+<input type="button" value="0" onclick="document.calcu.answer.value+='0'">
+<input type="button" value="." onclick="document.calcu.answer.value+='.'">
+<input type="button" class="eval" value="=" onclick="document.calcu.answer.value=eval(document.calcu.answer.value)">
+
+
+</form>
+</body>
+</html>
